@@ -6,6 +6,7 @@ struct VBO
 {
 	GLuint ID;
 	VBO(GLfloat* vertices, GLsizeiptr size);
+	VBO() = default;
 	~VBO();
 
 	void Bind();

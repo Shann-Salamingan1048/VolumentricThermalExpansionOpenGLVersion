@@ -48,6 +48,7 @@ OpenGL::~OpenGL()
 		glfwDestroyWindow(m_window);
 		glfwTerminate();
 	}
+	std::cout << "OpenGL destroyed\n";
 }
 GLFWwindow* OpenGL::getWindow() const
 {

@@ -1372,5 +1372,7 @@
     <None Include="dependencies\include\glm\gtx\wrap.inl">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="GUI\Button\button.vert" />
+    <None Include="GUI\Button\button.frag" />
   </ItemGroup>
 </Project>

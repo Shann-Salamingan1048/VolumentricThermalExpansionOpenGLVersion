@@ -5,6 +5,7 @@ struct EBO
 {
 	GLuint ID;
 	explicit EBO(GLuint* indices, GLsizeiptr size);
+	EBO() = default;
 	~EBO();
 
 	void Bind();

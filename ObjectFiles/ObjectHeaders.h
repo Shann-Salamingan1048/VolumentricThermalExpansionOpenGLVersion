@@ -1,5 +1,5 @@
 #pragma once
-#include "EBO.h"
 #include "VAO.h"
 #include "VBO.h"
+#include "EBO.h"
 #include "shaderClass.h"
