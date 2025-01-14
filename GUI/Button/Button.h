@@ -15,10 +15,10 @@ private:
 	int m_windowHeight;
 
 private:
-	Shader shaderProgram;
-	VAO vao1;
-	VBO vbo1;
-	EBO ebo1;
+	Shader* shaderProgram;
+	VAO* vao1;
+	VBO* vbo1;
+	EBO* ebo1;
 
 private:
 	float vertices[32] =

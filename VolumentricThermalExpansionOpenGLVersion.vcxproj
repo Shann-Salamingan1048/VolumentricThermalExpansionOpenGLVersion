@@ -444,6 +444,7 @@
     <ClInclude Include="dependencies\include\stb\stb_images.h" />
     <ClInclude Include="GUI\Button\Button.h" />
     <ClInclude Include="ObjectFiles\EBO.h" />
+    <ClInclude Include="ObjectFiles\ObjectHeaders.h" />
     <ClInclude Include="ObjectFiles\shaderClass.h" />
     <ClInclude Include="ObjectFiles\VAO.h" />
     <ClInclude Include="ObjectFiles\VBO.h" />

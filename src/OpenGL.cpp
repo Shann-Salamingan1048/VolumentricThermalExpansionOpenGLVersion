@@ -35,11 +35,6 @@ OpenGL::OpenGL(uint32_t width, uint32_t height, const char* title)
 	// Set the initial viewport
 	glViewport(0, 0, width, height);
 
-	// Optional: Set callbacks, such as resizing
-	glfwSetFramebufferSizeCallback(m_window, [](GLFWwindow* win, int width, int height) {
-		glViewport(0, 0, width, height);  // Set new viewport
-		glClear(GL_COLOR_BUFFER_BIT); // Clear the buffer
-	});
 }
 OpenGL::~OpenGL()
 {

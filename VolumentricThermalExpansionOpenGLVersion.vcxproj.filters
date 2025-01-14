@@ -953,6 +953,9 @@
     <ClInclude Include="ObjectFiles\VBO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectFiles\ObjectHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="dependencies\include\glm\detail\func_common.inl">
