@@ -8,6 +8,7 @@ VBO::VBO(GLfloat* vertices, GLsizeiptr size)
 }
 VBO::~VBO()
 {
+	std::cout << "VBO destroyed\n";
 	Delete();
 }
 

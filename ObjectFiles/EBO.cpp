@@ -21,5 +21,6 @@ void EBO::Delete()
 
 EBO::~EBO()
 {
+	std::cout << "EBO destroyed\n";
 	Delete();
 }

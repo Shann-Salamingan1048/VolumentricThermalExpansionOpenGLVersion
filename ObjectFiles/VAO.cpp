@@ -7,6 +7,7 @@ VAO::VAO()
 }
 VAO::~VAO()
 {
+	std::cout << "VAO destroyed\n";
 	Delete();
 }
 void VAO::LinkAttrib(VBO& VBO, GLuint layout)

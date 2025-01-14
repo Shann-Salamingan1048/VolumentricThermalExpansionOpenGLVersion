@@ -1,7 +1,7 @@
 #pragma once
 // Vertex Buffer Object (VBO)
 #include <glad/glad.h>
-
+#include <iostream>
 struct VBO
 {
 	GLuint ID;

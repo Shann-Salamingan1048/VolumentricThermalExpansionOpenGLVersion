@@ -2,6 +2,7 @@
 // Vertex Array Object (VAO)
 
 #include <glad/glad.h>
+#include <iostream>
 #include "VBO.h"
 
 struct VAO

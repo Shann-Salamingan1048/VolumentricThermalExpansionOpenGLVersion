@@ -2,6 +2,7 @@
 Shader::Shader() : ID(0) {}
 Shader::~Shader()
 {
+	std::cout << "shader has been destroyed\n";
 	Delete();
 }
 
@@ -93,7 +94,16 @@ void Shader::setFloat(const std::string& name, float value) const
 void Shader::Activate()
 {
 	glUseProgram(ID);
+	GLint success;
+	glGetProgramiv(ID, GL_LINK_STATUS, &success);
+	if (!success)
+	{
+		char infoLog[1024];
+		glGetProgramInfoLog(ID, 1024, nullptr, infoLog);
+		std::cerr << "ERROR::SHADER_PROGRAM_LINKING_ERROR: " << infoLog << std::endl;
+	}
 }
+
 void Shader::Delete()
 {
 	glDeleteProgram(ID);
@@ -108,7 +118,7 @@ void Shader::CheckCompileErrors(GLuint shader, const std::string& type)
 		if (!success)
 		{
 			glGetShaderInfoLog(shader, 1024, nullptr, infoLog);
-			std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+			std::cerr << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- -----------------------------------------------------\n";
 		}
 	}
 	else
@@ -117,7 +127,7 @@ void Shader::CheckCompileErrors(GLuint shader, const std::string& type)
 		if (!success)
 		{
 			glGetProgramInfoLog(shader, 1024, nullptr, infoLog);
-			std::cerr << "ERROR::PROGRAM_LINKING_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+			std::cerr << "ERROR::PROGRAM_LINKING_ERROR of type: " << type << "\n" << infoLog << "\n -- -----------------------------------------------------\n";
 		}
 	}
 }
