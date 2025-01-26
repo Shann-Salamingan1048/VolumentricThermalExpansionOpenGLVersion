@@ -7,7 +7,7 @@ class OpenGL
 {
 private:
 	GLFWwindow* m_window;
-	void init();
+	static void init();
 public:
 
 	explicit OpenGL(uint32_t width, uint32_t height, const char* titel);

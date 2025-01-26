@@ -51,6 +51,9 @@
     <ClCompile Include="GUI\Button\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GUI\Base Shape Square\SquareBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dependencies\include\glad\glad.h">
@@ -954,6 +957,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ObjectFiles\ObjectHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Base Shape Square\SquareBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

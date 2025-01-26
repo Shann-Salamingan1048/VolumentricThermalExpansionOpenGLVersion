@@ -14,13 +14,13 @@ void Application::run()
         inputProcess();
 
 
-        glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         // Add rendering code here...
         m_but1.render();
 
-
+        
         glfwSwapBuffers(m_window);
         glfwPollEvents();
     }
